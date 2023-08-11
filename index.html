@@ -1,17 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ... (meta tags, title, etc.) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nahom Ghebreselasie</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Include Bootstrap CSS link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white; /* Set text color to be visible against the background */
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .profile-image {
+            transition: transform 0.3s;
+        }
+
+        .profile-image.large {
+            transform: scale(1.5);
+        }
+    </style>
+    <script>
+        function toggleImageSize() {
+            var image = document.querySelector('.profile-image');
+            image.classList.toggle('large');
+        }
+    </script>
 </head>
 <body>
     <div class="container">
-        <h1>Nahom Ghebreselasie!</h1>
-        <p>This is a basic webpage example.</p>
+        <h1 class="pink-text">Nahom Ghebreselasie</h1>
+        <img src="pic.jpeg" alt="Nahom Ghebreselasie" class="profile-image" onmouseover="toggleImageSize()">
         
-        <!-- Your additional content here -->
+        <h2 class="pink-text">About Me</h2>
+        <p>I am a dedicated student, passionate about delving into the fields of Electrical Engineering and Computer Science. My driving force is the desire to turn my aspiration into reality, aiming to become a skilled Software Engineer.</p>
+
+        <h2 class="pink-text">Links</h2>
+        <button class="btn btn-primary" onclick="window.location.href='https://github.com/NahomAngesom'">GitHub</button>
+        <button class="btn btn-primary" onclick="window.location.href='https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile'">LinkedIn</button>
+
+        <h2 class="pink-text">Education</h2>
+        <p>University of California Berkeley</p>
+        <p>B.S Electrical Engineering And Computer Science, class 2023</p>
+
+
+        <h2 class="pink-text">Work Experience</h2>
+        <!-- Electrical Engineer Intern -->
+        <h3>Electrical Engineer Intern - Bart</h3>
+        <p>June 2023 - Present</p>
+
+        <!-- Software Engineer Intern -->
+        <h3>Software Engineer Intern - EriTel</h3>
+        <p>July 2019 - September 2019</p>
     </div>
 
     <!-- Include Bootstrap JS scripts if needed -->

@@ -1,3 +1,26 @@
-p {
-    color: red;
+/* Add your custom CSS styles here */
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 100px;
+    color: #FFFFFF;
+}
+
+.profile-image {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 4px solid #003262;
+    box-shadow: 0px 0px 10px rgba(0, 50, 98, 0.5);
+}
+
+
+/* Style for pink text */
+.pink-text {
+    color: pink;
 }
